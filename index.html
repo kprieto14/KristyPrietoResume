@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bagel+Fat+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kristy Prieto's Resume Website</title>
   </head>
@@ -12,17 +15,17 @@
       <section>
         <h1>Kristy Prieto</h1>
       </section>
-      <nav class="container">
-        <ul>
+      <nav>
+        <ul class="container">
           <li><img src="public/images/Phone.png" 
             alt="Icon of a phone"/> (305) 725-3124</li>
           <li><img src="public/images/Email_ICO.png" 
             alt="Icon of an envelope"/> kprieto14@gmail.com</li>
           <li>
-            <img src="public/images/LinkedIN.png" alt ="LinkedIn Logo"/>
+            <a href="https://www.linkedin.com/in/kristy-prieto/"><img src="public/images/LinkedIN.png" alt ="LinkedIn Logo"/></a>
           </li>
           <li>
-            <img src="public/images/GitHeader.png" alt="Github logo"/>
+            <a href="https://github.com/kprieto14"><img src="public/images/GitHeader.png" alt="Github logo"/></a>
           </li>
         </ul>
       </nav>
@@ -30,7 +33,7 @@
 
     <main>
       <section>
-        <figure>
+        <figure class="page-greeter">
           <img src="public/images/Kristy_PF.png" alt="Profile picture of Kristy"/>
           <div>
             <h1>Hello! I'm Kristy Prieto</h1>
@@ -38,9 +41,9 @@
           </div>
         </figure>
 
-        <article>
+        <article class="background">
           <h2>Background</h2>
-          <div>
+          <p>
             I am currently in the process of switching careers by learning to code to start as a 
             Web Developer in the tech field. I started self-learning online about a year ago and 
             teaching myself some basic HTML, CSS, and Javascript for my Front-End skills. I have 
@@ -48,12 +51,12 @@
             in order to further my studies and get serious about learning to code! I have so far 
             learned the basics and fundamentals of C# and SQL and look forward to learning more and
             honing in my skills. 
-          </div>
+          </p>
         </article>
     
-        <nav>
+        <nav class="github-projects">
           <div>
-            <ul>
+            <ul class="container">
               <li><img src="public/images/Github-Projectpng.png" alt ="Github logo"/></li>
               <li>Github Projects</li>
               <li><a href="https://github.com/kprieto14">Check it out!</a></li>
@@ -62,7 +65,7 @@
             <h4>Here's a selection of projects I've created through my bootcamp endeavors:</h4>
           </div>
 
-          <div>
+          <section class="grid-container">
             <article>
               <a href="https://github.com/kprieto14/BlackJackCS"
                 ><img src="public/images/BlackJack_IMG.png" alt="Picture of a blackjack table"></a>
@@ -119,71 +122,79 @@
                   as corresponding buttons are pressed down.</li>
               </ul>
             </article>
-          </div>
+          </section>
         </nav>
 
-        <div>
+        <article class="quote-section">
           <img src="public/images/Quote_Left_IMG.png" alt="Symbol of quotation marks facing left">
-          
-          <article>
+          <p>
             While I may be switching careers from a social service to a technology based one, my
             hope is that one day when I am proficient in coding, that I can still help people by 
             creating technology that will help people with and without disabilities have access to
             more technology that will improve their lives, such as creating communication and 
             learning programs. I also hope to help encourage and inspire other minorities to pursue
             careers in which they are not pre-dominantly represented in.
-          </article>
-
+          </p>
           <img src="public/images/Quote_Right_IMG.png" alt="Symbol of quotation marks facing right">
-        </div>
+        </article>
 
-        <div>
+        
+        <div class="container">
           <img src="public/images/Graduation.png" alt="Icon of a graduation cap">
           <h2>Education</h2>
-
-          <article>
-            <img src="public/images/Suncoast-ICO.png" alt="Icon for SDG">
-            <div>
-              <h3>Suncoast Developers Guild</h3>
-              <hr>
-              <h4>Web Development Program</h4>
-              <ul>
-                <li>2023 - Present (8 months)</li>
-                <li>Web development program learning backend technology such as C#, SQL, React, 
-                  .Net, Ruby and frontend technology basics of HTML, CSS and Javascript/Typescript
-                  to create a full-stack project combining the two areas to prepare me for a career
-                  in web development.</li>
+        </div>
+        <section class="education">
+          <div class="school-container">
+            <article>
+              <ul class="container">
+                <li><img src="public/images/Suncoast-ICO.png" alt="Icon for SDG"></li>
+                <li>
+                  <h3>Suncoast Developers Guild</h3>
+                  <hr>
+                  <h4>Web Development Program</h4>
+                  <ul>
+                    <li>2023 - Present (8 months)</li>
+                    <li>Web development program learning backend technology such as C#, SQL, React, 
+                      .Net, Ruby and frontend technology basics of HTML, CSS and Javascript/Typescript
+                      to create a full-stack project combining the two areas to prepare me for a career
+                      in web development.</li>
+                  </ul>
+                </li>
               </ul>
-            </div>
-          </article>
-
-          <article>
-            <img src="public/images/FIU_ICON.png" alt="Logo for FIU">
-            <div>
-              <h3>Florida International University</h3>
-              <hr>
-              <h4>B.S. in Recreation & Sport Management; Track: Recreation Therapy</h4>
-              <ul>
-                <li>2010 - 2016 (6 years)</li>
-                <li>Undergraduate degree program</li>
+            </article>
+  
+            <article>
+              <ul class="container">
+                <li><img src="public/images/FIU_ICON.png" alt="Logo for FIU"></li>
+                <li>
+                  <h3>Florida International University</h3>
+                  <hr>
+                  <h4>B.S. in Recreation & Sport Management; Track: Recreation Therapy</h4>
+                  <ul>
+                    <li>2010 - 2016 (6 years)</li>
+                    <li>Undergraduate degree program</li>
+                  </ul>
+                </li>
               </ul>
-            </div>
-          </article>
-
-          <article>
-            <img src="public/images/CoralReef_ICO.png" alt="Logo for Coral Reef Senior High">
-            <div>
-              <h3>Coral Reef Senior High School</h3>
-              <hr>
-              <h4>High School Diploma</h4>
-              <ul>
-                <li>2006-2010</li>
-                <li>Completed Medical Sciences Academy</li>
+            </article>
+  
+            <article>
+              <ul class="container">
+                <li><img src="public/images/CoralReef_ICO.png" alt="Logo for Coral Reef Senior High"></li>
+                <li>
+                  <h3>Coral Reef Senior High School</h3>
+                  <hr>
+                  <h4>High School Diploma</h4>
+                  <ul>
+                    <li>2006-2010</li>
+                    <li>Completed Medical Sciences Academy</li>
+                  </ul>
+                </li>
               </ul>
-            </div>
-          </article>
-
-          <aside>
+            </article>
+          </div>
+  
+          <aside class="certification-container">
             <h3>Certifications & Skills</h3>
             <ul>
               <li>- Certified in emergency First Aid and CPR</li>
@@ -195,90 +206,106 @@
               <li>- Front-end coding language such as HTML, CSS, Javascript</li>
             </ul>
           </aside>
-        </div>
+        </section>
 
-        <div>
-          <img src="public/images/Briefcase.png" alt="Icon of a briefcase">
-          <h2>Job Experience</h2>
-
-          <article>
-            <img src="public/images/yReads_ICO.png" alt="Logo for yReads">
-            <div>
-              <h3>yReads!</h3>
-              <hr>
-              <h4>Program Assistant</h4>
-              <ul>
-                <li>September 2019 - November 2022</li>
-                <li>Part-time position working with elementary aged students to teach literacy skills.
-                  Assists the Site Coordinators in planning and implementation of lesson plans, activities,
-                  and other tasks as needed. Also assisting with classroom set-up, snack, clean-up, hallway 
-                  transitions, and classroom management.</li>
-            </div>
-          </article>
+        <section class="job-experience">
+          <div class="container">
+            <img src="public/images/Briefcase.png" alt="Icon of a briefcase">
+            <h2>Job Experience</h2>
+          </div>
 
           <article>
-            <img src="public/images/Childrens_ICO.png" alt="Icon for Children's Health Hospital">
-            <div>
-              <h3>Children's Health</h3>
-              <hr>
-              <h4>Recreation Therapist</h4>
-              <ul>
-                <li>September 2019 - November 2022</li>
-                <li>Full-time position working with various individuals aged 5-17 years old in the Psychiatry
-                  department to work with various diagnoses such as anxiety, depression, eating disorders, and 
-                  other emotional/ behavioral disorders.</li>
-                <li></li>
-                <li>Assessment of leisure interests to new patients.</li>
-                <li></li>
-                <li>Planning and implementation of activities to learn coping skills, emotional regulation, 
-                  leisure education, and social skills.</li>
-                <li>Research and documentation of community leisure resources for patients.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article>
-            <img src="public/images/LIFE_ICO.png" alt="Icon of Life Therapies logo">
-            <h3>Life Therapies/ Complete Treatment LLC</h3>
-            <hr>
-            <h4>Recreation/ Aquatic Therapist</h4>
-            <ul>
-              <li>October 2017 - November 2022</li>
-              <li>Contract position working with various individuals aged 7-36 with 
-                and without various disabilities.</li>
-              <li></li>
-              <li>Assessment and intake of new admissions looking to receive services through Medicaid.</li>
-              <li></li>
-              <li>Planning and implementation of therapy sessions to work on skills including community 
-                integration, adaptive recreation and sports, emotional regulation, leisure education, 
-                physical activity, and social skills.</li>
-              <li></li>
-              <li>Evaluation of skill progression thoroughly weekly, quarterly, and annual documentation.</li>
+            <ul class="container">
+              <li><img src="public/images/yReads_ICO.png" alt="Logo for yReads"></li>
+              <li>
+                <h3>yReads!</h3>
+                <hr>
+                <h4>Program Assistant</h4>
+                <ul>
+                  <li>September 2019 - November 2022</li>
+                  <li>Part-time position working with elementary aged students to teach literacy skills.
+                    Assists the Site Coordinators in planning and implementation of lesson plans, activities,
+                    and other tasks as needed. Also assisting with classroom set-up, snack, clean-up, hallway 
+                    transitions, and classroom management.</li>
+              </li>
             </ul>
           </article>
 
           <article>
-            <img src="public/images/Miami_ICO.png" alt="Image of Miami-Dade Parks and Recreation logo">
-            <h3>Miami Dade Parks and Recreation</h3>
-            <hr>
-            <h4>Recreation Leader (Lead Position)</h4>
-            <ul>
-              <li>October 2015 – May 2017</li>
-              <li>Experience in various programs working with youth and adults with special needs, between 
-                ages of 6 to 45, at various parks. </li>
-              <li></li>
-              <li>Planning and implementation of scheduled activities & programs with the children and adapting 
-                activities to foster and encourage participation in such activities like arts and crafts, 
-                outdoor playing, puzzles, dancing, completion of homework, etc... </li>
-              <li></li>
-              <li>Behavioral management & social skills education programming and implementation. </li>
-              <li></li>
-              <li>Ensuring workers were following schedule and rules of work environment. </li>
+            <ul class="container">
+              <li><img src="public/images/Childrens_ICO.png" alt="Icon for Children's Health Hospital"></li>
+              <li>
+                <h3>Children's Health</h3>
+                <hr>
+                <h4>Recreation Therapist</h4>
+                <ul>
+                  <li>September 2019 - November 2022</li>
+                  <li>Full-time position working with various individuals aged 5-17 years old in the Psychiatry
+                    department to work with various diagnoses such as anxiety, depression, eating disorders, and 
+                    other emotional/ behavioral disorders.</li>
+                  <br>
+                  <li>Assessment of leisure interests to new patients.</li>
+                  <br>
+                  <li>Planning and implementation of activities to learn coping skills, emotional regulation, 
+                    leisure education, and social skills.</li>
+                    <br>
+                  <li>Research and documentation of community leisure resources for patients.</li>
+                </ul>
+              </li>
             </ul>
           </article>
-        </div>
 
-        <div>
+          <article>
+            <ul class="container">
+              <li><img src="public/images/LIFE_ICO.png" alt="Icon of Life Therapies logo"></li>
+              <li>
+                <h3>Life Therapies/ Complete Treatment LLC</h3>
+                <hr>
+                <h4>Recreation/ Aquatic Therapist</h4>
+                <ul>
+                  <li>October 2017 - November 2022</li>
+                  <li>Contract position working with various individuals aged 7-36 with 
+                    and without various disabilities.</li>
+                  <br>
+                  <li>Assessment and intake of new admissions looking to receive services through Medicaid.</li>
+                  <br>
+                  <li>Planning and implementation of therapy sessions to work on skills including community 
+                    integration, adaptive recreation and sports, emotional regulation, leisure education, 
+                    physical activity, and social skills.</li>
+                  <br>
+                  <li>Evaluation of skill progression thoroughly weekly, quarterly, and annual documentation.</li>
+                </ul>
+              </li>
+            </ul>
+            
+          </article>
+
+          <article>
+            <ul class="container">
+              <li><img src="public/images/Miami_ICO.png" alt="Image of Miami-Dade Parks and Recreation logo"></li>
+              <li>
+                <h3>Miami Dade Parks and Recreation</h3>
+                <hr>
+                <h4>Recreation Leader (Lead Position)</h4>
+                <ul>
+                  <li>October 2015 – May 2017</li>
+                  <li>Experience in various programs working with youth and adults with special needs, between 
+                    ages of 6 to 45, at various parks. </li>
+                  <li></li>
+                  <li>Planning and implementation of scheduled activities & programs with the children and adapting 
+                    activities to foster and encourage participation in such activities like arts and crafts, 
+                    outdoor playing, puzzles, dancing, completion of homework, etc... </li>
+                  <li></li>
+                  <li>Behavioral management & social skills education programming and implementation. </li>
+                  <li></li>
+                  <li>Ensuring workers were following schedule and rules of work environment. </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="references">
           <h3>References</h3>
           <ul>
             <li>Kimberly Duffy</li>
@@ -297,7 +324,7 @@
               <li>(777) 777-7777</li>
             </ul>
           </ul>
-        </div>
+        </section>
       </section>
     </main>
   </body>
