@@ -1,7 +1,7 @@
 :root {
   font: 16px / 1 normal Poppins;
   color: #FFFFFF;
-  background-image: url(public/images/Gradient_BG.png);
+  background-image: url('/images/Gradient_BG.png');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
