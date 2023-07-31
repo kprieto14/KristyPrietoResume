@@ -3,28 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kristy Prieto's Resume Website</title>
   </head>
   <body>
     <script type="module" src="/src/main.ts"></script>
     <header>
-      <section>
+      <nav>
         <h1>Kristy Prieto</h1>
-      </section>
+      </nav>
       <nav>
         <ul class="container">
-          <li><img src="public/images/Phone.png" 
-            alt="Icon of a phone"/> (305) 725-3124</li>
-          <li><img src="public/images/Email_ICO.png" 
-            alt="Icon of an envelope"/> kprieto14@gmail.com</li>
-          <li>
+          <li><img src="public/images/Phone.png" alt="Icon of a phone" class="small-icon"/></li>
+          <li style="padding-left: 6px">(305) 725-3124</li>
+          <li style="padding-left: 20px"><img src="public/images/Email_ICO.png" alt="Icon of an envelope" class="small-icon"/></li>
+          <li style="padding-left: 4px">kprieto14@gmail.com</li>
+          <li style="padding-left: 10px">
             <a href="https://www.linkedin.com/in/kristy-prieto/"><img src="public/images/LinkedIN.png" alt ="LinkedIn Logo"/></a>
           </li>
-          <li>
+          <li style="padding-left: 10px">
             <a href="https://github.com/kprieto14"><img src="public/images/GitHeader.png" alt="Github logo"/></a>
           </li>
         </ul>
@@ -32,16 +31,18 @@
     </header>
 
     <main>
-      <section>
-        <figure class="page-greeter">
-          <img src="public/images/Kristy_PF.png" alt="Profile picture of Kristy"/>
-          <div>
-            <h1>Hello! I'm Kristy Prieto</h1>
-            <h2>And hopefully your next developer~</h2>
-          </div>
-        </figure>
+      <section class="dotted-line"></section>
+      
+      <section class="page-greeter">
+        <img src="public/images/Kristy_PF.png" alt="Profile picture of Kristy"/>
+        <div>
+          <h1 style="font-size: 72px;">Hello! I'm Kristy Prieto</h1>
+          <h1>And hopefully your next developer~</h1>
+        </div>
+      </section>
 
-        <article class="background">
+      <section class="background">
+        <div>
           <h2>Background</h2>
           <p>
             I am currently in the process of switching careers by learning to code to start as a 
@@ -52,80 +53,82 @@
             learned the basics and fundamentals of C# and SQL and look forward to learning more and
             honing in my skills. 
           </p>
-        </article>
-    
-        <nav class="github-projects">
-          <div>
-            <ul class="container">
-              <li><img src="public/images/Github-Projectpng.png" alt ="Github logo"/></li>
-              <li>Github Projects</li>
-              <li><a href="https://github.com/kprieto14">Check it out!</a></li>
-              <li><a href="https://github.com/kprieto14"><img src="public/images/Export_ICO.png" alt="Export Icon"/></a></li>
+        </div>
+      </section>
+  
+      <nav class="github-projects">
+        <div>
+          <ul>
+            <li><img src="public/images/Github-Projectpng.png" alt ="Github logo"/></li>
+            <li><h2>Github Projects</h2></li>
+            <li style="font-size: 19px;"><a href="https://github.com/kprieto14">Check it out!</a></li>
+            <li><a href="https://github.com/kprieto14"><img src="public/images/Export_ICO.png" alt="Export Icon"/></a></li>
+          </ul>
+          <p>Here's a selection of projects I've created through my bootcamp endeavors:</p>
+        </div>
+
+        <section class="grid-container">
+          <article>
+            <a href="https://github.com/kprieto14/BlackJackCS"
+              ><img src="public/images/BlackJack_IMG.png" alt="Picture of a blackjack table"></a>
+            <ul>
+              <li class="project-title"><a href="https://github.com/kprieto14/BlackJackCS">Blackjack</a></li>
+              <li class="project-description">A back-end program using C# that replicates a 2-player game of Blackjack (aka 21) using
+                one deck of 52 cards.</li>
             </ul>
-            <h4>Here's a selection of projects I've created through my bootcamp endeavors:</h4>
-          </div>
+          </article>
 
-          <section class="grid-container">
-            <article>
-              <a href="https://github.com/kprieto14/BlackJackCS"
-                ><img src="public/images/BlackJack_IMG.png" alt="Picture of a blackjack table"></a>
-              <ul>
-                <li><a href="https://github.com/kprieto14/BlackJackCS">Blackjack</a></li>
-                <li>A back-end program using C# that replicates a 2-player game of Blackjack (aka 21) using
-                  one deck of 52 cards.</li>
-              </ul>
-            </article>
+          <article>
+            <a href="https://github.com/kprieto14/RhythmsGonnaGetYou"
+              ><img src="public/images/Rythm_IMG.png" alt="Picture of a record label"></a>
+            <ul>
+              <li class="project-title"><a href="https://github.com/kprieto14/RhythmsGonnaGetYou">Rhythm's Gonna Get You</a></li>
+              <li class="project-description">A back-end music database using C# & SQL statements that keeps track of bands, 
+                their albums and songs.</li>
+            </ul>
+          </article>
 
-            <article>
-              <a href="https://github.com/kprieto14/RhythmsGonnaGetYou"
-                ><img src="public/images/Rythm_IMG.png" alt="Picture of a record label"></a>
-              <ul>
-                <li><a href="https://github.com/kprieto14/RhythmsGonnaGetYou">Rhythm's Gonna Get You</a></li>
-                <li>A back-end music database using C# & SQL statements that keeps track of bands, 
-                  their albums and songs.</li>
-              </ul>
-            </article>
-
-            <article>
-              <a href="https://kprieto14.github.io/cv-with-css/"
-                ><img src="public/images/CVwithCSS.png" alt="Screenshots of an old resume website"></a>
-              <ul>
-                <li><a href="https://kprieto14.github.io/cv-with-css/">CV with CSS</a></li>
-                <li>My first attempt at a CV with HTML and CSS.</li>
-              </ul>
-            </article>
-             
-            <article>
-              <a href="https://kprieto14.github.io/tindog/"
-                ><img src="public/images/Tindog.png" alt="Screenshots of a fake dating website for dogs"></a>
-              <ul>
-                <li><a href="https://kprieto14.github.io/tindog/">Tindog</a></li>
-                <li>A landing page for a dog dating application. Woof.</li>
-              </ul>
-            </article>
+          <article>
+            <a href="https://kprieto14.github.io/cv-with-css/"
+              ><img src="public/images/CVwithCSS.png" alt="Screenshots of an old resume website"></a>
+            <ul>
+              <li class="project-title"><a href="https://kprieto14.github.io/cv-with-css/">CV with CSS</a></li>
+              <li class="project-description">My first attempt at a CV with HTML and CSS.</li>
+            </ul>
+          </article>
             
-            <article>
-              <a href="https://fakeoctodex.netlify.app/"
-                ><img src="public/images/Octodex.png" alt="Screenshots of a recreation of the Octodex website from Github"></a>
-              <ul>
-                <li><a href="https://fakeoctodex.netlify.app/">Octodex</a></li>
-                <li>A recreation of GitHub’s Octodex website.</li>
-              </ul>
-            </article>
-            
-            <article>
-              <a href="https://kprieto14.github.io/DrumKit/"
-                ><img src="public/images/Rythm_IMG.png" alt=""></a>
-              <ul>
-                <li><a href="https://kprieto14.github.io/DrumKit/">Drum Kit</a></li>
-                <li>A front-end website that practiced implementing Javascript to simulate drum noises
-                  as corresponding buttons are pressed down.</li>
-              </ul>
-            </article>
-          </section>
-        </nav>
+          <article>
+            <a href="https://kprieto14.github.io/tindog/"
+              ><img src="public/images/Tindog.png" alt="Screenshots of a fake dating website for dogs"></a>
+            <ul>
+              <li class="project-title"><a href="https://kprieto14.github.io/tindog/">Tindog</a></li>
+              <li class="project-description">A landing page for a dog dating application. Woof.</li>
+            </ul>
+          </article>
+          
+          <article>
+            <a href="https://fakeoctodex.netlify.app/"
+              ><img src="public/images/Octodex.png" alt="Screenshots of a recreation of the Octodex website from Github"></a>
+            <ul>
+              <li class="project-title"><a href="https://fakeoctodex.netlify.app/">Octodex</a></li>
+              <li class="project-description">A recreation of GitHub’s Octodex website.</li>
+            </ul>
+          </article>
+          
+          <article>
+            <a href="https://kprieto14.github.io/DrumKit/"
+              ><img src="public/images/Drumkit.png" alt=""></a>
+            <ul>
+              <li class="project-title"><a href="https://kprieto14.github.io/DrumKit/">Drum Kit</a></li>
+              <li class="project-description">A front-end website that practiced implementing Javascript to simulate drum noises
+                as keys are pressed down.</li>
+            </ul>
+          </article>
+        </section>
+      </nav>
 
-        <article class="quote-section">
+      <article class="quote-section">
+        <div>
           <img src="public/images/Quote_Left_IMG.png" alt="Symbol of quotation marks facing left">
           <p>
             While I may be switching careers from a social service to a technology based one, my
@@ -136,195 +139,209 @@
             careers in which they are not pre-dominantly represented in.
           </p>
           <img src="public/images/Quote_Right_IMG.png" alt="Symbol of quotation marks facing right">
-        </article>
-
-        
+        </div>
+      </article>
+      
+      <section class="education">
         <div class="container">
           <img src="public/images/Graduation.png" alt="Icon of a graduation cap">
-          <h2>Education</h2>
+          <h2 style="padding-left: 15px;">Education</h2>
         </div>
-        <section class="education">
-          <div class="school-container">
-            <article>
-              <ul class="container">
-                <li><img src="public/images/Suncoast-ICO.png" alt="Icon for SDG"></li>
-                <li>
-                  <h3>Suncoast Developers Guild</h3>
-                  <hr>
-                  <h4>Web Development Program</h4>
-                  <ul>
-                    <li>2023 - Present (8 months)</li>
-                    <li>Web development program learning backend technology such as C#, SQL, React, 
-                      .Net, Ruby and frontend technology basics of HTML, CSS and Javascript/Typescript
-                      to create a full-stack project combining the two areas to prepare me for a career
-                      in web development.</li>
-                  </ul>
-                </li>
-              </ul>
-            </article>
-  
-            <article>
-              <ul class="container">
-                <li><img src="public/images/FIU_ICON.png" alt="Logo for FIU"></li>
-                <li>
-                  <h3>Florida International University</h3>
-                  <hr>
-                  <h4>B.S. in Recreation & Sport Management; Track: Recreation Therapy</h4>
-                  <ul>
-                    <li>2010 - 2016 (6 years)</li>
-                    <li>Undergraduate degree program</li>
-                  </ul>
-                </li>
-              </ul>
-            </article>
-  
-            <article>
-              <ul class="container">
-                <li><img src="public/images/CoralReef_ICO.png" alt="Logo for Coral Reef Senior High"></li>
-                <li>
-                  <h3>Coral Reef Senior High School</h3>
-                  <hr>
-                  <h4>High School Diploma</h4>
-                  <ul>
-                    <li>2006-2010</li>
-                    <li>Completed Medical Sciences Academy</li>
-                  </ul>
-                </li>
-              </ul>
-            </article>
-          </div>
-  
-          <aside class="certification-container">
-            <h3>Certifications & Skills</h3>
-            <ul>
-              <li>- Certified in emergency First Aid and CPR</li>
-              <li>- Certified Therapeutic Recreation Specialist</li>
-              <li>- Experience working with emotional needs in children and youth</li>
-              <li>- Knowledge of Spanish</li>
-              <li>- Proficient in Microsoft Office programs like Word, PowerPoint, Excel</li>
-              <li>- Back-end software language such as C#, SQL</li>
-              <li>- Front-end coding language such as HTML, CSS, Javascript</li>
-            </ul>
-          </aside>
-        </section>
 
-        <section class="job-experience">
-          <div class="container">
-            <img src="public/images/Briefcase.png" alt="Icon of a briefcase">
-            <h2>Job Experience</h2>
-          </div>
-
+        <div>
           <article>
-            <ul class="container">
-              <li><img src="public/images/yReads_ICO.png" alt="Logo for yReads"></li>
+            <ul class="box-item">
+              <li><img src="public/images/Suncoast-ICO.png" alt="Icon for SDG"></li>
               <li>
-                <h3>yReads!</h3>
+                <h3>Suncoast Developers Guild</h3>
                 <hr>
-                <h4>Program Assistant</h4>
+                <h4>Web Development Program</h4>
                 <ul>
-                  <li>September 2019 - November 2022</li>
-                  <li>Part-time position working with elementary aged students to teach literacy skills.
-                    Assists the Site Coordinators in planning and implementation of lesson plans, activities,
-                    and other tasks as needed. Also assisting with classroom set-up, snack, clean-up, hallway 
-                    transitions, and classroom management.</li>
-              </li>
-            </ul>
-          </article>
-
-          <article>
-            <ul class="container">
-              <li><img src="public/images/Childrens_ICO.png" alt="Icon for Children's Health Hospital"></li>
-              <li>
-                <h3>Children's Health</h3>
-                <hr>
-                <h4>Recreation Therapist</h4>
-                <ul>
-                  <li>September 2019 - November 2022</li>
-                  <li>Full-time position working with various individuals aged 5-17 years old in the Psychiatry
-                    department to work with various diagnoses such as anxiety, depression, eating disorders, and 
-                    other emotional/ behavioral disorders.</li>
+                  <li>2023 - Present (8 months)</li>
                   <br>
-                  <li>Assessment of leisure interests to new patients.</li>
-                  <br>
-                  <li>Planning and implementation of activities to learn coping skills, emotional regulation, 
-                    leisure education, and social skills.</li>
-                    <br>
-                  <li>Research and documentation of community leisure resources for patients.</li>
+                  <li>Web development program learning backend technology such as C#, SQL, React, 
+                    .Net, Ruby and frontend technology basics of HTML, CSS and Javascript/Typescript
+                    to create a full-stack project combining the two areas to prepare me for a career
+                    in web development.</li>
                 </ul>
               </li>
             </ul>
           </article>
 
           <article>
-            <ul class="container">
-              <li><img src="public/images/LIFE_ICO.png" alt="Icon of Life Therapies logo"></li>
+            <ul class="box-item">
+              <li><img src="public/images/FIU_ICON.png" alt="Logo for FIU"></li>
               <li>
-                <h3>Life Therapies/ Complete Treatment LLC</h3>
+                <h3>Florida International University</h3>
                 <hr>
-                <h4>Recreation/ Aquatic Therapist</h4>
+                <h4>B.S. in Recreation & Sport Management; Track: Recreation Therapy</h4>
                 <ul>
-                  <li>October 2017 - November 2022</li>
-                  <li>Contract position working with various individuals aged 7-36 with 
-                    and without various disabilities.</li>
+                  <li>2010 - 2016 (6 years)</li>
                   <br>
-                  <li>Assessment and intake of new admissions looking to receive services through Medicaid.</li>
-                  <br>
-                  <li>Planning and implementation of therapy sessions to work on skills including community 
-                    integration, adaptive recreation and sports, emotional regulation, leisure education, 
-                    physical activity, and social skills.</li>
-                  <br>
-                  <li>Evaluation of skill progression thoroughly weekly, quarterly, and annual documentation.</li>
+                  <li>Undergraduate degree program</li>
                 </ul>
               </li>
             </ul>
-            
           </article>
 
           <article>
-            <ul class="container">
-              <li><img src="public/images/Miami_ICO.png" alt="Image of Miami-Dade Parks and Recreation logo"></li>
+            <ul class="box-item">
+              <li><img src="public/images/CoralReef_ICO.png" alt="Logo for Coral Reef Senior High"></li>
               <li>
-                <h3>Miami Dade Parks and Recreation</h3>
+                <h3>Coral Reef Senior High School</h3>
                 <hr>
-                <h4>Recreation Leader (Lead Position)</h4>
+                <h4>High School Diploma</h4>
                 <ul>
-                  <li>October 2015 – May 2017</li>
-                  <li>Experience in various programs working with youth and adults with special needs, between 
-                    ages of 6 to 45, at various parks. </li>
-                  <li></li>
-                  <li>Planning and implementation of scheduled activities & programs with the children and adapting 
-                    activities to foster and encourage participation in such activities like arts and crafts, 
-                    outdoor playing, puzzles, dancing, completion of homework, etc... </li>
-                  <li></li>
-                  <li>Behavioral management & social skills education programming and implementation. </li>
-                  <li></li>
-                  <li>Ensuring workers were following schedule and rules of work environment. </li>
+                  <li>2006-2010</li>
+                  <br>
+                  <li>Completed Medical Sciences Academy</li>
                 </ul>
               </li>
             </ul>
           </article>
-        </section>
+        </div>
 
-        <section class="references">
-          <h3>References</h3>
+        <aside class="certification-container">
+          <h3>Certifications & Skills</h3>
+          <br><br>
           <ul>
-            <li>Kimberly Duffy</li>
-            <ul>
-              <li>Software Engineer II at WHCC</li>
-              <li>(469) 642 - 9850</li>
-            </ul>
-            <li>Qian Wang</li>
-            <ul>
-              <li>Software Engineer | Manager at PwC</li>
-              <li>(777) 777-7777</li>
-            </ul>
-            <li>Connor Wagner</li>
-            <ul>
-              <li>Senior Associate Software Engineer at Infosys</li>
-              <li>(777) 777-7777</li>
-            </ul>
+            <li>- Certified in emergency First Aid and CPR</li>
+            <br>
+            <li>- Certified Therapeutic Recreation Specialist</li>
+            <br>
+            <li>- Experience working with emotional needs in children and youth</li>
+            <br>
+            <li>- Knowledge of Spanish</li>
+            <br>
+            <li>- Proficient in Microsoft Office programs like Word, PowerPoint, Excel</li>
+            <br>
+            <li>- Back-end software language such as C#, SQL</li>
+            <br>
+            <li>- Front-end coding language such as HTML, CSS, Javascript</li>
           </ul>
-        </section>
+        </aside>
+      </section>
+
+      <section class="job-experience">
+        <div class="container">
+          <img src="public/images/Briefcase.png" alt="Icon of a briefcase">
+          <h2 style="padding-left: 15px;">Job Experience</h2>
+        </div>
+
+        <article>
+          <ul class="box-item">
+            <li><img src="public/images/yReads_ICO.png" alt="Logo for yReads"></li>
+            <li>
+              <h3>yReads!</h3>
+              <hr>
+              <h4>Program Assistant</h4>
+              <ul>
+                <li>September 2019 - November 2022</li>
+                <br>
+                <li>Part-time position working with elementary aged students to teach literacy skills.
+                  Assists the Site Coordinators in planning and implementation of lesson plans, activities,
+                  and other tasks as needed. Also assisting with classroom set-up, snack, clean-up, hallway 
+                  transitions, and classroom management.</li>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <ul class="box-item">
+            <li><img src="public/images/Childrens_ICO.png" alt="Icon for Children's Health Hospital"></li>
+            <li>
+              <h3>Children's Health</h3>
+              <hr>
+              <h4>Recreation Therapist</h4>
+              <ul>
+                <li>September 2019 - November 2022</li>
+                <br>
+                <li>Full-time position working with various individuals aged 5-17 years old in the Psychiatry
+                  department to work with various diagnoses such as anxiety, depression, eating disorders, and 
+                  other emotional/ behavioral disorders.</li>
+                <br>
+                <li>Assessment of leisure interests to new patients.</li>
+                <br>
+                <li>Planning and implementation of activities to learn coping skills, emotional regulation, 
+                  leisure education, and social skills.</li>
+                  <br>
+                <li>Research and documentation of community leisure resources for patients.</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <ul class="box-item">
+            <li><img src="public/images/LIFE_ICO.png" alt="Icon of Life Therapies logo"></li>
+            <li>
+              <h3>Life Therapies/ Complete Treatment LLC</h3>
+              <hr>
+              <h4>Recreation/ Aquatic Therapist</h4>
+              <ul>
+                <li>October 2017 - November 2022</li>
+                <br>
+                <li>Contract position working with various individuals aged 7-36 with 
+                  and without various disabilities.</li>
+                <br>
+                <li>Assessment and intake of new admissions looking to receive services through Medicaid.</li>
+                <br>
+                <li>Planning and implementation of therapy sessions to work on skills including community 
+                  integration, adaptive recreation and sports, emotional regulation, leisure education, 
+                  physical activity, and social skills.</li>
+                <br>
+                <li>Evaluation of skill progression thoroughly weekly, quarterly, and annual documentation.</li>
+              </ul>
+            </li>
+          </ul>
+          
+        </article>
+
+        <article>
+          <ul class="box-item">
+            <li><img src="public/images/Miami_ICO.png" alt="Image of Miami-Dade Parks and Recreation logo"></li>
+            <li>
+              <h3>Miami Dade Parks and Recreation</h3>
+              <hr>
+              <h4>Recreation Leader (Lead Position)</h4>
+              <ul>
+                <li>October 2015 – May 2017</li>
+                <br>
+                <li>Experience in various programs working with youth and adults with special needs, between 
+                  ages of 6 to 45, at various parks. </li>
+                <br>
+                <li>Planning and implementation of scheduled activities & programs with the children and adapting 
+                  activities to foster and encourage participation in such activities like arts and crafts, 
+                  outdoor playing, puzzles, dancing, completion of homework, etc... </li>
+                <br>
+                <li>Behavioral management & social skills education programming and implementation. </li>
+                <br>
+                <li>Ensuring workers were following schedule and rules of work environment. </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+      
+      <section class="references">
+        <h3>References</h3>
+        <ul>
+          <li style="margin-top: 16px;">Kimberly Duffy</li>
+          <ul>
+            <li style="font-size: 14px;">Software Engineer II at WHCC</li>
+            <li>(469) 642 - 9850</li>
+          </ul>
+          <li style="margin-top: 16px;">Qian Wang</li>
+          <ul>
+            <li style="font-size: 14px;">Software Engineer | Manager at PwC</li>
+            <li>(777) 777-7777</li>
+          </ul>
+          <li style="margin-top: 16px;">Connor Wagner</li>
+          <ul>
+            <li style="font-size: 14px;">Senior Associate Software Engineer at Infosys</li>
+            <li>(777) 777-7777</li>
+          </ul>
+        </ul>
       </section>
     </main>
   </body>
