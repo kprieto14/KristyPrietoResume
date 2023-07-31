@@ -1,7 +1,7 @@
 :root {
   font: 16px / 1 normal Poppins;
   color: #FFFFFF;
-  background-image: url('/images/Gradient_BG.png');
+  background-image: url('../images/Gradient_BG.png');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
@@ -102,7 +102,7 @@ ul {
 }
 
 main {
-  padding: 319px 145px 250px 145px;
+  padding-bottom: 250px;
 }
 
 .container {
@@ -125,27 +125,25 @@ main {
   align-items: center;
   column-gap: 42px;
   margin-bottom: 128px;
+  padding: 319px 145px 0px 145px;
 }
 
 .background, .quote-section {
   border: 1px solid #707070;
+  border-width: 1px 0px;
   padding: 45px 0px 70px 0px;
-  position: relative;
-  right: 145px;
-  width: 2000px;
+  width: 100%;
   background: rgba(250, 250, 250, 0.1);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
 
 .background div {
-  padding-left: 305px;
-  max-width: 800px;
-  min-width: none;
+  padding: 0px 145px 0px 305px ;
 }
 
 .github-projects {
-  padding-left: 144px;
+  padding: 0 145px 0 288px;
   margin: 60px 0px 66px 0px;
 }
 
@@ -180,8 +178,8 @@ main {
 .quote-section div {
   display: flex;
   align-items: center;
-  padding-left: 143px;
-  max-width: 1000px;
+  padding: 0px 145px 0px 143px;
+  width:fit-content
 }
 
 .quote-section div p {
@@ -190,10 +188,15 @@ main {
 
 .education {
   margin: 63px 0px;
+  padding: 0px 145px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 32px;
   row-gap: 17px;
+}
+
+.job-experience {
+  padding: 0px 145px;
 }
 
 .education .container,
@@ -240,7 +243,7 @@ main {
   border: 1px dashed #FFFFFF71;
   border-radius: 25px;
   padding: 24px;
-  margin-top: 40px;
+  margin: 40px 145px 0px 145px;
   background: rgba(250, 250, 250, 0.1);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
