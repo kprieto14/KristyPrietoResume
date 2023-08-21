@@ -101,8 +101,10 @@ ul {
   margin: 0;
 }
 
-main {
-  padding-bottom: 250px;
+footer {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -187,16 +189,15 @@ main {
 }
 
 .education {
-  margin: 63px 0px;
+  margin: 63px 0px 45px 0px;
   padding: 0px 145px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 32px;
-  row-gap: 17px;
 }
 
 .job-experience {
-  padding: 0px 145px;
+  padding: 0px 145px 25px 145px;
 }
 
 .education .container,
