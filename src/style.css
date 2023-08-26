@@ -22,20 +22,42 @@ a, a:visited {
   text-decoration: none;
 }
 
-article a img {
+article img {
   max-width: 259px;
   height: 205px;
   border-radius: 30px;
   margin-bottom: 11px;
+  transition: .3s ease;
 }
 
 .border img {
+  opacity: 50%;
   transition: .5s ease;
+  vertical-align: middle;
+  transform: scale(1.2);
 }
   
-.border img:hover{
-box-shadow: 0 0 0 10px #FFFFFF;
-transition: .5s ease;
+.border{
+  display: inline-block; 
+  overflow: hidden;      
+  border-radius: 30px;
+}
+
+.hidden {
+  position: absolute;
+  padding: 90px 20px;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 27px;
+  letter-spacing: 2px;
+  opacity: 100%;
+  margin: 0;
+  z-index: -1;
+}
+
+.uncover {
+  z-index: 1;
+  transition: .5 ease;
 }
 
 header {
@@ -115,7 +137,7 @@ footer {
 .dotted-line {
   top: 477px;
   left: 220px;
-  height: 3500px;
+  height: 3400px;
   border-style: dashed;
   border-width: 2px;
   z-index: -1;
@@ -167,7 +189,7 @@ footer {
   line-height: 17px;
 }
 
-.grid-container {
+#grid-container {
   display: grid;
   align-items: start;
   grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
@@ -198,6 +220,12 @@ footer {
 
 .job-experience {
   padding: 0px 145px 25px 145px;
+}
+
+.education article img,
+.job-experience article img {
+  width: 80px;
+  height: 80px;
 }
 
 .education .container,
@@ -250,3 +278,4 @@ footer {
   -webkit-backdrop-filter: blur(2px);
   line-height: 22px;
 }
+

@@ -32,12 +32,12 @@
     </header>
 
     <main>
-      <section class="dotted-line"></section>
+      <div class="dotted-line"></div>
 
       <section class="page-greeter">
         <img src="images/Kristy_PF.png" alt="Profile picture of Kristy"/>
         <div>
-          <h1 style="font-size: 72px;">Hello! I'm Kristy Prieto</h1>
+          <h1 style="font-size: 72px;">Hello! I'm Kristy Prieto 👋🏽</h1>
           <h1>And hopefully your next developer~</h1>
         </div>
       </section>
@@ -68,13 +68,15 @@
           <p>Here's a selection of projects I've created through my bootcamp endeavors:</p>
         </div>
 
-        <section class="grid-container">
+        <section id="grid-container">
           <article>
-            <div class="border">
-              <a href="https://github.com/kprieto14/BlackJackCS"
-              ><img src="images/BlackJack_IMG.png" alt="Picture of a blackjack table"></a>
-            </div>
             <ul>
+              <li class="hidden"><a href="https://github.com/kprieto14/BlackJackCS">CHECK IT OUT!</a></li>
+              <li>
+                <div>
+                  <img src="images/BlackJack_IMG.png" alt="Picture of a blackjack table">
+                </div>
+              </li>
               <li class="project-title"><a href="https://github.com/kprieto14/BlackJackCS">Blackjack</a></li>
               <li class="project-description">A back-end program using C# that replicates a 2-player game of Blackjack (aka 21) using
                 one deck of 52 cards.</li>
@@ -82,12 +84,13 @@
           </article>
 
           <article>
-            <div class="border">
-              <a href="https://github.com/kprieto14/RhythmsGonnaGetYou"
-              ><img src="images/Rythm_IMG.png" alt="Picture of a record label"></a>
-            </div>
-
             <ul>
+              <li class="hidden"><a href="https://github.com/kprieto14/RhythmsGonnaGetYou">CHECK IT OUT!</a></li>
+              <li> 
+                <div>
+                  <img src="images/Rythm_IMG.png" alt="Picture of a record label">
+                </div>
+              </li>
               <li class="project-title"><a href="https://github.com/kprieto14/RhythmsGonnaGetYou">Rhythm's Gonna Get You</a></li>
               <li class="project-description">A back-end music database using C# & SQL statements that keeps track of bands, 
                 their albums and songs.</li>
@@ -95,48 +98,53 @@
           </article>
 
           <article>
-            <div class="border">
-              <a href="https://kprieto14.github.io/cv-with-css/"
-              ><img src="images/CVwithCSS.png" alt="Screenshots of an old resume website"></a>
-            </div>
-          
             <ul>
+              <li class="hidden"><a href="https://kprieto14.github.io/cv-with-css/">CHECK IT OUT!</a></li>
+              <li>
+                <div>
+                  <img src="images/CVwithCSS.png" alt="Screenshots of an old resume website">
+                </div>
+              </li>
               <li class="project-title"><a href="https://kprieto14.github.io/cv-with-css/">CV with CSS</a></li>
               <li class="project-description">My first attempt at a CV with HTML and CSS.</li>
             </ul>
           </article>
             
           <article>
-            <div class="border">
-              <a href="https://kprieto14.github.io/tindog/"
-              ><img src="images/Tindog.png" alt="Screenshots of a fake dating website for dogs"></a>
-            </div>
-    
             <ul>
+              <li class="hidden"><a href="https://kprieto14.github.io/tindog/">CHECK IT OUT!</a></li>
+              <li>
+                <div>
+                  <img src="images/Tindog.png" alt="Screenshots of a fake dating website for dogs">
+               </div>
+              </li>
               <li class="project-title"><a href="https://kprieto14.github.io/tindog/">Tindog</a></li>
               <li class="project-description">A landing page for a dog dating application. Woof.</li>
             </ul>
           </article>
           
           <article>
-            <div class="border">
-              <a href="https://fakeoctodex.netlify.app/"
-              ><img src="images/Octodex.png" alt="Screenshots of a recreation of the Octodex website from Github"></a>
-            </div>
-      
             <ul>
+              <li class="hidden"><a href="https://fakeoctodex.netlify.app/">CHECK IT OUT!</a></li>
+              <li>
+                <div>
+                  <img src="images/Octodex.png" alt="Screenshots of a recreation of the Octodex website from Github">
+                </div>
+              </li>
               <li class="project-title"><a href="https://fakeoctodex.netlify.app/">Octodex</a></li>
               <li class="project-description">A recreation of GitHub’s Octodex website.</li>
             </ul>
           </article>
           
           <article>
-            <div class="border">
-              <a href="https://kprieto14.github.io/DrumKit/"
-              ><img src="images/Drumkit.png" alt=""></a>
-            </div>
-      
             <ul>
+              <li class="hidden"><a href="https://kprieto14.github.io/DrumKit/"
+                >CHECK IT OUT!</a></li>
+              <li>
+                <div>
+                  <img src="images/Drumkit.png" alt="">
+                </div>
+              </li>
               <li class="project-title"><a href="https://kprieto14.github.io/DrumKit/">Drum Kit</a></li>
               <li class="project-description">A front-end website that practiced implementing Javascript to simulate drum noises
                 as keys are pressed down.</li>
@@ -220,25 +228,22 @@
         </div>
 
         <aside class="certification-container">
-          <h3>Certifications & Skills</h3>
+          <h3>Skills</h3>
           <br><br>
           <ul>
-            <li>- Certified in emergency First Aid and CPR</li>
+            <li>- C#</li>
             <br>
-            <li>- Certified Therapeutic Recreation Specialist</li>
+            <li>- SQL</li>
             <br>
-            <li>- Experience working with emotional needs in children and youth</li>
+            <li>- HTML</li>
             <br>
-            <li>- Knowledge of Spanish</li>
+            <li>- CSS</li>
             <br>
-            <li>- Proficient in Microsoft Office programs like Word, PowerPoint, Excel</li>
+            <li>- Javascript/ Typescript</li>
             <br>
-            <li>- Logic/ critical thinking skills</li>
+            <li>- React</li>
             <br>
-            <li>- Back-end software language such as C#, SQL</li>
-            <br>
-            <li>- Front-end coding language such as HTML, CSS, Javascript</li>
-          </ul>
+            <li>- Git</li>
         </aside>
       </section>
 
